@@ -146,6 +146,142 @@ p {
     right: 1rem;
 }
 
+
+.container {
+    max-width: 1000px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+.organization-section {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    overflow: hidden;
+}
+
+.section-header {
+    background: #23282d;
+    color: white;
+    padding: 2rem;
+    text-align: center;
+    position: relative;
+}
+
+.section-title {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+}
+
+.section-subtitle {
+    color: #e5e5e5;
+    font-size: 1.1rem;
+}
+
+.accordion-container {
+    padding: 2rem;
+}
+
+.accordion-item {
+    margin-bottom: 1rem;
+    border: 1px solid #eee;
+    border-radius: 6px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.accordion-item:hover {
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.accordion-header {
+    background: #f8f9fa;
+    padding: 1.5rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    transition: background-color 0.3s ease;
+}
+
+.accordion-header:hover {
+    background: #e9ecef;
+}
+
+.accordion-icon {
+    width: 40px;
+    height: 40px;
+    margin-right: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #0073aa;
+    border-radius: 50%;
+    color: white;
+    font-size: 1.2rem;
+}
+
+.accordion-title {
+    font-size: 1.3rem;
+    color: #0073aa;
+    flex-grow: 1;
+}
+
+.accordion-arrow {
+    font-size: 1.5rem;
+    color: #0073aa;
+    transition: transform 0.3s ease;
+}
+
+.accordion-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;
+    padding: 0 1.5rem;
+    background: white;
+}
+
+.accordion-content p {
+    padding: 1.5rem 0;
+    font-size: 1.1rem;
+}
+
+.accordion-item.active .accordion-content {
+    max-height: 500px;
+}
+
+.accordion-item.active .accordion-arrow {
+    transform: rotate(180deg);
+}
+
+.conclusion {
+    background: #f8f9fa;
+    padding: 2rem;
+    margin-top: 2rem;
+    border-radius: 6px;
+    border-left: 4px solid #0073aa;
+}
+
+.conclusion h3 {
+    color: #0073aa;
+    margin-bottom: 1rem;
+}
+
+@media (max-width: 768px) {
+    .accordion-header {
+        padding: 1rem;
+    }
+
+    .accordion-icon {
+        width: 30px;
+        height: 30px;
+        font-size: 1rem;
+    }
+
+    .accordion-title {
+        font-size: 1.1rem;
+    }
+}
+
 @media (max-width: 768px) {
     .carousel-button {
         width: 30px;
