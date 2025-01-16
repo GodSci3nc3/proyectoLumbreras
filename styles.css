@@ -20,7 +20,7 @@ header {
 }
 
 .container {
-    max-width: 1000px;
+    max-width: 100px;
     margin: 0 auto;
     padding: 2rem;
 }
@@ -81,7 +81,7 @@ p {
 
 .carousel-slide {
     min-width: 100%;
-    padding: 2rem;
+    padding: 5rem;
 }
 
 .feature-title {
